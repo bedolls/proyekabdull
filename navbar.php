@@ -18,6 +18,10 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/proyekabdul/modul-dosen/index.php">Data Dosen</a>
         </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/proyekabdul/logout.php">Log Out</a>
+        </li>
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
