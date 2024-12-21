@@ -1,4 +1,5 @@
 <?php
+$pesan = "";
 if(isset($_POST['tombol'])){
   #1. koneksi database
   include_once("koneksi.php");
@@ -19,8 +20,14 @@ if(isset($_POST['tombol'])){
   #6. buatkan IF jika login berhasil atau gagal
   if($cek > 0){
     //login berhasil
+    $pesan = '<div class="alert alert-success" role="alert">
+    A simple danger alert—check it out!
+  </div>';
   }else{
     //login gagal
+    $pesan = '<div class="alert alert-danger" role="alert">
+    A simple danger alert—check it out!
+  </div>';
   }
 }
 ?>
