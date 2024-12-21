@@ -6,7 +6,7 @@ if(isset($_POST['tombol'])){
 
   #2. mengambil value dari input
   $email = $_POST['email'];
-  $pass = $_POst['pass'];
+  $pass = md5($_POST['pass']);
 
   #3. tulisklajn query pengecekan apakaha data login tersedia di database?
   $sql_cek = "SELECT * FROM users WHERE email='$email' AND password='$pass'";
